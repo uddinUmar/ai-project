@@ -1,6 +1,6 @@
 import getpass
 import os
-import json
+
 from dotenv import load_dotenv
 from langchain.chat_models import init_chat_model
 from langchain_core.prompts import ChatPromptTemplate
@@ -11,7 +11,7 @@ load_dotenv()
 
 class LangChainProfiles:
     def __init__(self):
-        self.data = Profiles().all_profiles()  # This should return a list of profile dicts
+        self.data = Profiles().all_profiles()
 
     def generate_prompt(self, question: str):
         profiles=[]
