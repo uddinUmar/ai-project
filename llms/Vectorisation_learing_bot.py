@@ -15,7 +15,7 @@ if __name__ == "__main__":
         print("Please set environment variable OPEN_AI_API_KEY")
         exit(1)
 
-    file_path = "C:/Users/umaru/Downloads/Nike10k2021.pdf"  # ✅ Valid local file path
+    file_path = "C:/Users/umaru/Downloads/Nike10k2021.pdf"
     loader = PyPDFLoader(file_path)
 
 
